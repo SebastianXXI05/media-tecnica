@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@300;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  background-image: url("../images/fondo-index.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  padding-top: 0.1px;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: -1;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main__logo {
+  display: block;
+  margin: 1em 0 3em;
+}
+
+.logo__img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.main__title {
+  font-family: monospace;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 7em;
+  transition: 0.3s ease-in-out;
+}
+
+.main__title:hover {
+  color: rgb(106, 163, 216);
+  transform: translateY(-0.1em);
+  letter-spacing: 2px;
+}
+
+.main__text {
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.main__buttoms {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttom {
+  margin-left: 2em;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.3s ease;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.buttom:hover {
+  color: rgb(106, 163, 216);
+}
+
+.buttom::before {
+  content: "";
+  display: block;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease;
+}
+
+.buttom:hover::before {
+  left: 0;
+}
+
+.main__link {
+  color: white;
+  font-size: 1.1em;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+}
+
+@media (max-width: 768px) {
+  .main__title {
+    font-size: 15vw;
+  }
+
+  .main__text {
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+
+  .main__buttoms {
+    flex-direction: column;
+  }
+}
