@@ -142,4 +142,8 @@ body {
   .main__buttoms {
     flex-direction: column;
   }
+
+  .buttom {
+    margin-left: 0;
+  }
 }

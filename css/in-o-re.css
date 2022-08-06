@@ -1,3 +1,7 @@
+/*
+Estilos del inicio y registro de sesion.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
@@ -40,6 +44,7 @@ body {
   font-size: 3em;
   color: rgb(106, 163, 216);
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .inputs {
@@ -73,6 +78,7 @@ body {
 .main__button:hover {
   background-color: rgb(88, 142, 192);
   color: rgb(230, 230, 230);
+  text-transform: uppercase;
 }
 
 @media (max-width: 998px) {
